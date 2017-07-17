@@ -52,7 +52,9 @@
 
 <div id="input-panel" class="panel">
   <!-- TODO: Make this a button or anchor -->
-  <div id="run"><div data-l10n-id="ip-button-run" class="label">Run</div></div>
+  <textarea id="step-code" rows="20" cols="80" placeholder="Type your code here..." data-l10n-id="logo-ta-multi-line" id="logo-ta-multi-line"></textarea>
+
+  <div id="run"><div data-l10n-id="ip-button-run" class="label" id="run-code">Run</div></div>
   <div id="stop"><div data-l10n-id="ip-button-stop" class="label">Stop</div></div>
   <div id="clear"><div data-l10n-id="ip-button-clear" class="label">Clear</div></div>
   <div id="input">
@@ -63,6 +65,7 @@
       </div>
       <textarea rows="1" cols="80" placeholder="Type your code here..." data-l10n-id="logo-ta-single-line" id="logo-ta-single-line"></textarea>
       <textarea rows="20" cols="80" placeholder="Type your code here..." data-l10n-id="logo-ta-multi-line" id="logo-ta-multi-line"></textarea>
+
     </div>
   </div>
 </div>

@@ -209,7 +209,7 @@ function initInput() {
     var error = $('#display #error');
     error.classList.remove('shown');
 
-    var v = input.getValue();
+    var v = document.getElementById("step-code").value;
     if (v === '') {
       return;
     }
