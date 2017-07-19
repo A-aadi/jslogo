@@ -240,7 +240,8 @@ function initInput() {
     if (remote !== true && window.TogetherJS && window.TogetherJS.running) {
       TogetherJS.send({type: "clear"});
     }
-    input.setValue('');
+    $("#step-code").value = "";
+
   }
   input.clear = clear;
 
@@ -618,6 +619,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var url = canvas.toDataURL('image/png');
     if (!saveDataAs(url, 'logo_drawing.png'))
       Dialog.alert("Sorry, not supported by your browser");
+    $("#step-code").value = "clearscreen\n";
   });
   $('#clearhistory').addEventListener('click', function() {
     if (!confirm('Clear history: Are you sure?')) return;
